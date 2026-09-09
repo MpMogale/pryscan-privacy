@@ -1,3 +1,4 @@
 title: Pryscan
-description: Privacy policy
-theme: jekyll-theme-primer
+description: Shelf prices, in your money.
+# No theme: _layouts/default.html is the whole site chrome, so the policy
+# renders inside the same shell as the pages that are hand-written.

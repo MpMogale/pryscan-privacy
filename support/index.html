@@ -1,135 +1,43 @@
-<!doctype html>
-<html lang="en">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Pryscan Support</title>
-<meta name="description" content="Help and contact for Pryscan, the app that reads shelf prices and converts them to your own money.">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;700;800&display=swap">
-<style>
-  :root {
-    --ground: #F4F8FB;
-    --surface: #FFFFFF;
-    --ink: #0E1F33;
-    --muted: rgba(14,31,51,0.62);
-    --line: rgba(14,31,51,0.12);
-    --accent: #1668C7;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --ground: #08182B;
-      --surface: #102539;
-      --ink: #FFFFFF;
-      --muted: rgba(255,255,255,0.66);
-      --line: rgba(255,255,255,0.12);
-      --accent: #5AB8F5;
-    }
-  }
-  * { box-sizing: border-box; }
-  body {
-    margin: 0;
-    background: var(--ground);
-    color: var(--ink);
-    font-family: 'Sora', system-ui, -apple-system, "Segoe UI", sans-serif;
-    -webkit-font-smoothing: antialiased;
-    line-height: 1.6;
-  }
-  main { max-width: 640px; margin: 0 auto; padding: 56px 24px 80px; }
-  .lockup { display: flex; align-items: center; gap: 16px; }
-  .wordmark { font-size: 34px; font-weight: 800; letter-spacing: -1.2px; }
-  .wordmark span { color: var(--accent); }
-  .rule {
-    height: 3px; width: 92px; border-radius: 999px; margin: 20px 0 8px;
-    background: linear-gradient(96deg, #4A9FE8 0%, #22B5A0 52%, #3DD07A 100%);
-  }
-  .tagline { font-size: 19px; font-weight: 500; color: var(--muted); margin: 0 0 40px; }
-  h2 { font-size: 20px; font-weight: 700; letter-spacing: -0.4px; margin: 40px 0 10px; }
-  p { margin: 0 0 14px; }
-  a { color: var(--accent); }
-  .card {
-    background: var(--surface); border: 1px solid var(--line); border-radius: 16px;
-    padding: 22px 24px; margin: 8px 0 0;
-  }
-  .mail { font-size: 20px; font-weight: 700; }
-  dl { margin: 0; }
-  dt { font-weight: 700; margin-top: 18px; }
-  dd { margin: 4px 0 0; color: var(--muted); }
-  footer {
-    margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line);
-    color: var(--muted); font-size: 14px;
-  }
-</style>
-</head>
-<body>
-<main>
+---
+layout: default
+title: Support
+description: Help and contact for Pryscan, the app that reads shelf prices and converts them to your own money.
+---
 
-  <div class="lockup">
-    <svg width="56" height="56" viewBox="10 30 216 216" aria-hidden="true">
-      <defs>
-        <linearGradient id="lens" x1="56" y1="136" x2="144" y2="78" gradientUnits="userSpaceOnUse">
-          <stop offset="0" stop-color="#4A9FE8"></stop>
-          <stop offset="0.52" stop-color="#22B5A0"></stop>
-          <stop offset="1" stop-color="#3DD07A"></stop>
-        </linearGradient>
-      </defs>
-      <g fill="none" stroke="currentColor" stroke-width="13" stroke-linecap="round" stroke-linejoin="round">
-        <path d="M78 168L76 208M122 168L124 208" stroke-width="15"></path>
-        <path d="M41 136Q26 150 22 170M159 130Q180 120 186 96"></path>
-        <path d="M40 94V62A18 18 0 0 1 58 44H84M116 44H142A18 18 0 0 1 160 62V94M40 122V152A18 18 0 0 0 58 170H84M116 170H142A18 18 0 0 0 160 152V122"></path>
-      </g>
-      <ellipse cx="74" cy="216" rx="19" ry="9.5" fill="currentColor"></ellipse>
-      <ellipse cx="126" cy="216" rx="19" ry="9.5" fill="currentColor"></ellipse>
-      <path d="M56 107C74 78 126 78 144 107 126 136 74 136 56 107Z" fill="url(#lens)"></path>
-      <circle cx="100" cy="107" r="19" fill="#F2F7FC"></circle>
-      <circle cx="102" cy="108" r="12" fill="#0E2338"></circle>
-      <circle cx="106" cy="101" r="4.6" fill="#FFFFFF"></circle>
-    </svg>
-    <div class="wordmark">Prys<span>can</span></div>
-  </div>
+<h1>Support</h1>
 
-  <div class="rule"></div>
-  <p class="tagline">Shelf prices, in your money.</p>
+<h2>Get in touch</h2>
+<p>Email is the fastest way to reach a person. Include the make of your phone
+   and, if a price was misread, a photo of the shelf label — that is usually
+   enough to find the problem.</p>
+<div class="card">
+  <div class="mail"><a href="mailto:pryscan@gmail.com">pryscan@gmail.com</a></div>
+  <p style="margin: 6px 0 0; color: var(--muted);">Replies usually within a few days.</p>
+</div>
 
-  <h2>Get in touch</h2>
-  <p>Email is the fastest way to reach a person. Include the make of your phone
-     and, if a price was misread, a photo of the shelf label — that is usually
-     enough to find the problem.</p>
-  <div class="card">
-    <div class="mail"><a href="mailto:pryscan@gmail.com">pryscan@gmail.com</a></div>
-    <p style="margin: 6px 0 0; color: var(--muted);">Replies usually within a few days.</p>
-  </div>
+<h2>Before you write</h2>
+<dl>
+  <dt>A price came out wrong</dt>
+  <dd>Hold the phone square to the label and fit the price inside the
+      brackets. Shelf tags that show a unit price and a pack price together
+      are the hardest case, and the one most worth reporting.</dd>
 
-  <h2>Before you write</h2>
-  <dl>
-    <dt>A price came out wrong</dt>
-    <dd>Hold the phone square to the label and fit the price inside the
-        brackets. Shelf tags that show a unit price and a pack price together
-        are the hardest case, and the one most worth reporting.</dd>
+  <dt>The total is converting at the wrong rate</dt>
+  <dd>Rates are downloaded and then cached so the app works offline. Pull to
+      refresh on the basket, or set a rate by hand in Settings if you would
+      rather fix it yourself.</dd>
 
-    <dt>The total is converting at the wrong rate</dt>
-    <dd>Rates are downloaded and then cached so the app works offline. Pull to
-        refresh on the basket, or set a rate by hand in Settings if you would
-        rather fix it yourself.</dd>
+  <dt>The camera will not open</dt>
+  <dd>iOS asks for camera access once. If it was declined, turn it on under
+      Settings → Pryscan. Prices can always be typed in by hand instead.</dd>
 
-    <dt>The camera will not open</dt>
-    <dd>iOS asks for camera access once. If it was declined, turn it on under
-        Settings → Pryscan. Prices can always be typed in by hand instead.</dd>
+  <dt>What does Pro cost?</dt>
+  <dd>Nothing yet — the paid tier is not on sale, and everything the app does
+      today it does for free. When it opens it will be a single payment, with
+      no subscription and no account, and a purchase will be restorable on any
+      device signed in to the Apple ID that made it.</dd>
 
-    <dt>What does Pro cost?</dt>
-    <dd>Nothing yet — the paid tier is not on sale, and everything the app does
-        today it does for free. When it opens it will be a single payment, with
-        no subscription and no account, and a purchase will be restorable on any
-        device signed in to the Apple ID that made it.</dd>
-
-    <dt>Where is my data?</dt>
-    <dd>On your phone, and nowhere else. There is no account and no server.
-        Deleting the app deletes everything with it.</dd>
-  </dl>
-
-  <footer>
-    <a href="../">Privacy policy</a> · Pryscan is made in South Africa.
-  </footer>
-
-</main>
-</body>
-</html>
+  <dt>Where is my data?</dt>
+  <dd>On your phone, and nowhere else. There is no account and no server.
+      Deleting the app deletes everything with it.</dd>
+</dl>

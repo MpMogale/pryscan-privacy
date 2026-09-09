@@ -1,0 +1,90 @@
+/* Pryscan on the web: the app's own palette, type and spacing.
+   One stylesheet for every page so the site cannot drift the way the
+   splash and the icon nearly did. */
+
+:root {
+  --ground: #F4F8FB;
+  --surface: #FFFFFF;
+  --ink: #0E1F33;
+  --muted: rgba(14,31,51,0.62);
+  --faint: rgba(14,31,51,0.4);
+  --line: rgba(14,31,51,0.12);
+  --accent: #1668C7;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --ground: #08182B;
+    --surface: #102539;
+    --ink: #FFFFFF;
+    --muted: rgba(255,255,255,0.66);
+    --faint: rgba(255,255,255,0.45);
+    --line: rgba(255,255,255,0.12);
+    --accent: #5AB8F5;
+  }
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font-family: 'Sora', system-ui, -apple-system, "Segoe UI", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+}
+
+main { max-width: 660px; margin: 0 auto; padding: 48px 24px 80px; }
+
+a { color: var(--accent); }
+a:hover { text-decoration: none; }
+
+/* The lockup: mark, wordmark, and the spectrum rule under it. */
+.lockup { display: flex; align-items: center; gap: 14px; text-decoration: none; color: inherit; }
+.wordmark { font-size: 30px; font-weight: 800; letter-spacing: -1.1px; }
+.wordmark span { color: var(--accent); }
+.rule {
+  height: 3px; width: 92px; border-radius: 999px; margin: 18px 0 6px;
+  background: linear-gradient(96deg, #4A9FE8 0%, #22B5A0 52%, #3DD07A 100%);
+}
+.tagline { font-size: 19px; font-weight: 500; color: var(--muted); margin: 0 0 40px; }
+
+h1 { font-size: 30px; font-weight: 800; letter-spacing: -1px; margin: 0 0 20px; }
+h2 { font-size: 20px; font-weight: 700; letter-spacing: -0.4px; margin: 38px 0 10px; }
+h3 { font-size: 16px; font-weight: 700; margin: 26px 0 6px; }
+p, li { margin: 0 0 14px; }
+ul { padding-left: 22px; }
+blockquote {
+  margin: 0 0 22px; padding: 14px 18px; border-left: 3px solid var(--line);
+  color: var(--muted); background: var(--surface); border-radius: 0 12px 12px 0;
+}
+code {
+  font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  font-size: 0.9em; background: var(--surface); border: 1px solid var(--line);
+  border-radius: 6px; padding: 1px 5px;
+}
+strong { font-weight: 700; }
+
+.card {
+  background: var(--surface); border: 1px solid var(--line); border-radius: 16px;
+  padding: 22px 24px; margin: 8px 0 0;
+}
+.mail { font-size: 20px; font-weight: 700; }
+
+dl { margin: 0; }
+dt { font-weight: 700; margin-top: 18px; }
+dd { margin: 4px 0 0; color: var(--muted); }
+
+.actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 8px 0 0; }
+.button {
+  display: inline-block; text-decoration: none; font-weight: 700; font-size: 15px;
+  padding: 12px 20px; border-radius: 14px; border: 1px solid var(--line);
+  color: var(--ink); background: var(--surface);
+}
+.button.primary { background: var(--accent); border-color: transparent; color: #FFFFFF; }
+
+footer {
+  margin-top: 48px; padding-top: 20px; border-top: 1px solid var(--line);
+  color: var(--faint); font-size: 14px;
+}
+footer a { color: var(--muted); }
