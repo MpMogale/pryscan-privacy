@@ -6,7 +6,7 @@ title: Privacy
 # Privacy Policy
 
 **Effective date:** 8 September 2026
-**Contact:** pryscan@gmail.com
+**Contact:** support@pryscan.com
 
 > This is a draft prepared from the app's actual behaviour, not legal advice.
 > Have it reviewed before publishing, particularly if you plan to distribute in
@@ -89,4 +89,4 @@ release notes.
 
 ## Contact
 
-Questions about this policy: pryscan@gmail.com
+Questions about this policy: support@pryscan.com
