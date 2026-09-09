@@ -1,4 +1,4 @@
 title: Pryscan
-description: Shelf prices, in your money.
+description: Know the total before the till.
 # No theme: _layouts/default.html is the whole site chrome, so the policy
 # renders inside the same shell as the pages that are hand-written.
